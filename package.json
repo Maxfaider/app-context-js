@@ -1,0 +1,32 @@
+{
+  "name": "app-context-js",
+  "version": "1.0.0",
+  "description": "This module represents a centralized context, which consists of a set of name to object/events/services bindings",
+  "main": "lib/app-context.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxfaider/app-context-js.git"
+  },
+  "keywords": [
+    "lib",
+    "nodejs",
+    "javascript",
+    "context",
+    "object",
+    "events",
+    "services"
+  ],
+  "author": "Alan M.E",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maxfaider/app-context-js/issues"
+  },
+  "homepage": "https://github.com/Maxfaider/app-context-js#readme"
+}
