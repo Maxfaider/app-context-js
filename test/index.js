@@ -23,7 +23,7 @@ AppContext.Services.publish(
     { info: 'any API, for save tasks'}
 );
 
-AppContext.Services.getService('User_persistence');
+console.log("aa->" + AppContext.Services.getService('User_persistence'));
 AppContext.Services.getServices('Task_persistence', 'User_persistence');
 
 function registerUser(service, properties) {

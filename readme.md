@@ -47,7 +47,7 @@ AppContext.Services.publish(
 
 var userPersistence = AppContext.Services.getService('User_persistence');
 var { userPersistence, Taskpersistence} = AppContext.Services.getServices(
-    ['Task_persistence', 'User_persistence']);
+    'Task_persistence', 'User_persistence');
 ```
 ###  Register/Emit Events
 
@@ -100,8 +100,8 @@ function registerTask(services, properties) {
     // any code
 }
 
-AppContext.onEvent('addUser', registerUser, ['User_persistence']);
-AppContext.onEvent('addTask', registerTask, ['Task_persistence', 'User_persistence']);
+AppContext.onEvent('addUser', registerUser, 'User_persistence');
+AppContext.onEvent('addTask', registerTask, 'Task_persistence', 'User_persistence');
 
 // other file.js
 import AppContext from 'app-context-js'

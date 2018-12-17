@@ -1,6 +1,6 @@
 {
   "name": "app-context-js",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "This module represents a centralized context, which consists of a set of name to object/events/services bindings",
   "main": "lib/app-context.js",
   "directories": {
