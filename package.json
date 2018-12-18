@@ -1,6 +1,6 @@
 {
   "name": "app-context-js",
-  "version": "1.0.0-beta",
+  "version": "1.1.0",
   "description": "This module represents a centralized context, which consists of a set of name to object/events/services bindings",
   "main": "lib/app-context.js",
   "directories": {
@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/Maxfaider/app-context-js/issues"
   },
-  "homepage": "https://github.com/Maxfaider/app-context-js#readme"
+  "homepage": "https://github.com/Maxfaider/app-context-js#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
