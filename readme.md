@@ -47,7 +47,7 @@ AppContext.Services.publish(
 
 var userPersistence = AppContext.Services.getService('User_persistence');
 var { userPersistence, Taskpersistence} = AppContext.Services.getServices(
-    'Task_persistence', 'User_persistence');
+    ['Task_persistence', 'User_persistence']);
 ```
 ###  Register/Emit Events
 
