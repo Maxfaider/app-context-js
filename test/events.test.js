@@ -5,7 +5,7 @@ var events = new Events();
 
 describe('Test: module Events', function() {
 
-    describe('register listener', function() {
+    describe('Register Listener', function() {
 
         function callback() {
             // empty
@@ -16,11 +16,11 @@ describe('Test: module Events', function() {
         events.addListener('someEvent3', callback);
         events.addListener('someEvent4', callback);
 
-        it('listener existent', function() {
+        it('Listener existent', function() {
             assert.ok(events.getListener('someEvent4'));
+            assert.ok(events.getListener('someEvent3'));
             assert.ok(events.getListener('someEvent2'));
             assert.ok(events.getListener('someEvent1'));
-            assert.ok(events.getListener('someEvent3'));
         });
     });
 
