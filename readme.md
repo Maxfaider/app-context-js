@@ -100,15 +100,15 @@ function registerTask(services, properties) {
     // any code
 }
 
-AppContext.onEvent('addUser', registerUser, 'User_persistence');
-AppContext.onEvent('addTask', registerTask, 'Task_persistence', 'User_persistence');
+AppContext.onEvent('addUser', registerUser);
+AppContext.onEvent('addTask', registerTask);
 
 // other file.js
 import AppContext from 'app-context-js'
 
 var User = {
-    name: 'John',
-    lastnames: 'Doe'
+    name: 'Maxfaider',
+    topic: ['programing', 'chess', 'novels graphic']
 }
 
 var task = {
@@ -116,6 +116,6 @@ var task = {
     owner: User
 }
 
-AppContext.emitEvent('addUser', User);
-AppContext.emitEvent('addTask', task);
+AppContext.emitEvent('addUser', User, 'User_persistence');
+AppContext.emitEvent('addTask', task, 'Task_persistence', 'User_persistence');
 ```
